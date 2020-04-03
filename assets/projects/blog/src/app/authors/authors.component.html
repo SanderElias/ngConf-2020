@@ -1,0 +1,72 @@
+<h1>Authors:</h1>
+
+<ul>
+  <li
+    *ngFor="let author of authors$|async"
+    [routerLinkActive]="'active'"
+  >
+    <a [routerLink]="['.', author.id]">
+      {{author.name}}
+    </a>
+  </li>
+</ul>
+
+<hr>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  :host {
+    display: block;
+    height: calc(100vh - 8rem);
+    padding: 3rem;
+    width: 98vw;
+  }
+
+  h1 {
+    margin-left: -1.5rem;
+    font-size: 3rem;
+  }
+
+  li {
+    font-size: 2rem;
+    list-style-type: none;
+    margin-bottom: .1rem;
+    color: #3AA860;
+    padding: 6px;
+    border-radius: 6px;
+    width: fit-content;
+  }
+
+  li:hover {
+    color: #6CCE7A;
+    text-shadow: 2px 2px 1px #232D2A;
+  }
+
+  li.active {
+    background-color: #D3D3D3;
+  }
+
+  li>a,
+  li>a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+  }
+</style>

@@ -1,0 +1,21 @@
+Generating ES5 bundles for differential loading...
+ES5 bundle generation complete.
+
+chunk {polyfills-es5} polyfills-es5.js, polyfills-es5.js.map (polyfills-es5) 710 kB [initial] [rendered]
+chunk {polyfills} polyfills-es2015.js, polyfills-es2015.js.map (polyfills) 146 kB [initial] [rendered]
+chunk {about-about-module} about-about-module-es2015.js, about-about-module-es2015.js.map (about-about-module) 6.71 kB  [rendered]
+chunk {about-about-module} about-about-module-es5.js, about-about-module-es5.js.map (about-about-module) 8.32 kB  [rendered]
+chunk {authors-authors-module} authors-authors-module-es2015.js, authors-authors-module-es2015.js.map (authors-authors-module) 10.9 kB  [rendered]
+chunk {authors-authors-module} authors-authors-module-es5.js, authors-authors-module-es5.js.map (authors-authors-module) 12.1 kB  [rendered]
+chunk {landing-landing-module} landing-landing-module-es2015.js, landing-landing-module-es2015.js.map (landing-landing-module) 6.89 kB  [rendered]
+chunk {landing-landing-module} landing-landing-module-es5.js, landing-landing-module-es5.js.map (landing-landing-module) 8.52 kB  [rendered]
+chunk {main} main-es2015.js, main-es2015.js.map (main) 15.6 kB [initial] [rendered]
+chunk {main} main-es5.js, main-es5.js.map (main) 17.5 kB [initial] [rendered]
+chunk {vendor} vendor-es2015.js, vendor-es2015.js.map (vendor) 2.85 MB [initial] [rendered]
+chunk {vendor} vendor-es5.js, vendor-es5.js.map (vendor) 3.35 MB [initial] [rendered]
+chunk {runtime} runtime-es2015.js, runtime-es2015.js.map (runtime) 9.16 kB [entry] [rendered]
+chunk {runtime} runtime-es5.js, runtime-es5.js.map (runtime) 9.16 kB [entry] [rendered]
+chunk {author-author-module} author-author-module-es2015.js, author-author-module-es2015.js.map (author-author-module) 12.7 kB  [rendered]
+chunk {author-author-module} author-author-module-es5.js, author-author-module-es5.js.map (author-author-module) 14.8 kB  [rendered]
+chunk {styles} styles.css, styles.css.map (styles) 316 bytes [initial] [rendered]
+Date: 2020-04-01T07:46:49.211Z - Hash: 2960742bd5dc7883328a - Time: 7379ms

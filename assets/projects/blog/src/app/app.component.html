@@ -1,0 +1,87 @@
+<header>
+  <img src="https://scully.io/assets/scullyio-logo.svg" alt="Scully Logo">
+  <h1>Sample Blog app</h1>
+  <nav>
+    <a routerLink="/">🏠</a>
+    <a routerLink="/authors/1" routerLinkActive='act'>🗣</a>
+    <a routerLink="/about" routerLinkActive='act'>⁇</a>
+    <a routerLink="/blog/Welcome" routerLinkActive='act'>📖</a>
+
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <h2>♥♥♥ Angular blogs made easy ♥♥♥</h2>
+</footer>
+
+<style>
+  :host {
+    min-height: 100vh;
+    min-width: calc(100vw - 3rem);
+    display: grid;
+    grid-template-rows: 5rem 1fr 3rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  header,
+  footer {
+    background-color: #4C615B;
+    color: #6CCE7A;
+    width: 100%;
+    padding: 0 1rem;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: left;
+  }
+
+  header {
+    grid-template-columns: 160px 1fr 1fr;
+  }
+
+  nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 3em);
+    justify-content: end;
+    justify-items: center;
+  }
+
+  nav > a {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 6px;
+    border: 2px solid inherit;
+    margin: 0 .3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+  }
+
+  nav > a:hover {
+    background-color: #D3D3D3;
+    transform: scale(1.5);
+  }
+
+  nav > a.act {
+   border: 2px dashed #D3D3D3;
+  }  
+
+  footer {
+    justify-items: right;
+  }
+
+  header>*,footer>* {
+    margin:0;
+    padding: 0;
+  }
+
+
+</style>

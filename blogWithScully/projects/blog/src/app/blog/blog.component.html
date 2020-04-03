@@ -1,0 +1,108 @@
+<nav>
+  <a
+    *ngFor='let bp of blogs$|async'
+    [routerLink]='[bp.route]'
+    [routerLinkActive]="'active'"
+  >{{bp.title}}</a>
+
+</nav>
+
+<article>
+  <header>
+    <h2 *ngIf="currentRoute$|async as cr">This is a {{cr.blogType}} blog</h2>
+  </header>
+  <main>
+    <!-- This is where Scully will inject the static HTML -->
+    <scully-content></scully-content>
+  </main>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  :host {
+    display: grid;
+    min-height: calc(100vh - 8rem);
+    width: 98vw;
+    padding: 1rem;
+    grid-template-columns: 180px 1fr;
+    gap: 1rem;
+  }
+
+  nav>a {
+    display: block;
+    font-size: 1rem;
+    list-style-type: none;
+    margin-bottom: 0rem;
+    color: #3AA860;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 6px;
+    width: fit-content;
+    border-radius: 6px;
+    ;
+    color: inherit;
+  }
+
+  nav>a:hover {
+    color: #6CCE7A;
+    text-shadow: 2px 2px .5px #232D2A;
+  }
+
+  nav>a.active {
+    color: #4C615B;
+    background-color: rgba(108, 206, 123, 0.5);
+  }
+
+  nav>a.active:hover {
+    color: #4C615B;
+    text-shadow: inherit;
+  }
+
+  nav>a:visited {}
+
+  pre {
+    background: #232d2a;
+    color: #fafbfc;
+    border-radius: 8px;
+    border-top: black solid 25px;
+    overflow-x: auto;
+    min-height: 100px;
+    padding: 16px 35px 15px 20px;
+    margin: 35px 75px;
+  }
+
+  pre>code::after {
+    content: '>▁';
+    color: lawngreen;
+    text-indent: 0ch;
+    display: block;
+    padding: 2px 2px;
+    margin-top: 8px;
+    animation: blink 1.5s step-end infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1.0;
+    }
+
+    50% {
+      opacity: 0.0;
+    }
+
+    100% {
+      opacity: 1.0;
+    }
+  }
+</style>

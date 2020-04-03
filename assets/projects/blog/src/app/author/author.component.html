@@ -1,0 +1,65 @@
+<h1>author:</h1>
+
+<section *ngIf='author$ | async as author'>
+  <table>
+    <tr>
+      <td>name</td>
+      <td>{{author.name}}</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>{{author.email}}</td>
+    </tr>
+    <tr>
+      <td>site</td>
+      <td>{{author.website}}</td>
+    </tr>
+  </table>
+  <img [src]="'/assets/'+author.id+'.jpg'" alt="">
+</section>
+
+
+<style>
+  :host {
+    display: block;
+  }
+
+  section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  td {
+    font-size: 1.5rem;
+  }
+
+  td:nth-child(2) {
+    color:#6CCE7A
+  }
+
+  h1 {
+    margin: 0;
+    margin-left: -1.5rem;
+    font-size: 3rem;
+  }
+
+  li {
+    font-size: 2rem;
+    list-style-type: none;
+    margin-bottom: .5rem;
+    color: #3AA860;
+  }
+
+  li:hover {
+    color: #6CCE7A;
+    text-shadow: 2px 2px 1px #232D2A;
+
+  }
+
+  li>a,
+  li>a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+  }
+</style>
