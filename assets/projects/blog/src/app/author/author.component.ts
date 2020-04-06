@@ -10,7 +10,7 @@ import {Authors} from '../authors/Authors.interface';
   styles: [],
 })
 export class AuthorComponent implements OnInit {
-  author$ = this.exitroute.params.pipe(
+  author$ = this.route.params.pipe(
     pluck('id'),
     filter(Boolean),
     map(r => +r),
