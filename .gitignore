@@ -1,3 +1,4 @@
 .vscode
 blogWithScully/.vscode
 blogWithScully/.gitignore
+blogWithScully/node_modules/**

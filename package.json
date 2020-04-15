@@ -1,0 +1,8 @@
+{
+    "name": "blog-with-scully",
+    "version": "0.0.0",
+    "scripts": {
+        "build": "cd ./blogWithScully && npm install && npm run refresh"
+    }
+}
+  

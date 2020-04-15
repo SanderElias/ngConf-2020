@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "scully": "scully --nw --scanRoutes",
-    "refresh": "ng build  && scully --nw",
+    "scully": "scully --scanRoutes",
+    "refresh": "ng build  && scully",
     "scully:serve": "scully serve"
   },
   "private": true,
@@ -22,9 +22,9 @@
     "@angular/platform-browser": "~9.0.6",
     "@angular/platform-browser-dynamic": "~9.0.6",
     "@angular/router": "~9.0.6",
-    "@scullyio/init": "0.0.23",
+    "@scullyio/init": "latest",
     "@scullyio/ng-lib": "latest",
-    "@scullyio/scully": "0.0.85",
+    "@scullyio/scully": "latest",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
